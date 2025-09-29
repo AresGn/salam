@@ -90,7 +90,7 @@ export function Projects() {
               {...project}
               specialButton={{
                 text: "Voir Fiablitech",
-                url: "https://fiablitech.fr/",
+                url: "https://www.fiablitech-projet.com",
                 isExternal: true
               }}
             />
@@ -102,10 +102,10 @@ export function Projects() {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">Découvrez Fiablitech</h3>
             <p className="text-lg mb-6 opacity-90">
-              Agence de développement web et mobile spécialisée dans les solutions e-commerce innovantes
+              Agence de développement web, mobile et e-commerce spécialisée dans les solutions digitales innovantes
             </p>
             <a
-              href="https://fiablitech.fr/"
+              href="https://www.fiablitech-projet.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"

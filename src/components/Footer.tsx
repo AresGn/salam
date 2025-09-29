@@ -96,7 +96,7 @@ export function Footer() {
               <div className="text-sm text-gray-400">• Solutions sur mesure</div>
             </div>
             <a
-              href="https://fiablitech.fr/"
+              href="https://www.fiablitech-projet.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-sm rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105"

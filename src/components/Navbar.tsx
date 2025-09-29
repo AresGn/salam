@@ -85,7 +85,7 @@ export function Navbar() {
 
             <ThemeToggle isDark={isDark} onToggle={toggleTheme} />
             <a
-              href="https://fiablitech.fr/"
+              href="https://www.fiablitech-projet.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white text-sm hover:from-purple-700 hover:to-blue-700 hover:text-white dark:text-white dark:hover:text-white transition-all duration-300"
@@ -134,7 +134,7 @@ export function Navbar() {
                 </Link>
               ))}
               <a
-                href="https://fiablitech.fr/"
+                href="https://www.fiablitech-projet.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-3 py-1.5 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white text-sm hover:from-purple-700 hover:to-blue-700 hover:text-white dark:text-white dark:hover:text-white transition-all duration-300"

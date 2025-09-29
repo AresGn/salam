@@ -4,7 +4,7 @@ import { ExperienceCard } from "./ui/ExperienceCard";
 
 const experiences = [
   {
-    title: "Alternance Immobilier",
+    title: "Stage alterné Immobilier",
     company: "Agence immobilière « Agence de la gare »",
     period: "2024-2025",
     description: `Accueil et orientation des clients : premier point de contact à l'entrée de l'agence.

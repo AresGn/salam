@@ -88,6 +88,14 @@ const allSkills = [
     category: 'technical',
     color: 'from-green-500 to-emerald-600'
   },
+  {
+    name: "Cybersécurité",
+    level: 65,
+    description: "Formation en cours - Sécurisation des environnements digitaux et protection des données",
+    icon: FaTools,
+    category: 'technical',
+    color: 'from-green-500 to-emerald-600'
+  },
 
 
 ];

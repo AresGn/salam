@@ -120,7 +120,7 @@ const defaultContent: ContentData = {
     name: "SAIBOU ABDOU SALAM",
     roles: [
       "Étudiant en Bachelor Supply Chain",
-      "Co-Fondateur Fiabilitech",
+      "Fondateur de Fiablitech",
       "Spécialiste en Gestion Commerciale",
       "Passionné d'Entrepreneuriat",
       "Expert en Relations Client"
@@ -132,19 +132,20 @@ const defaultContent: ContentData = {
   
   about: {
     intro: "About Me",
-    description1: "Passionné par la tech et l'entrepreneuriat, j'ai lancé Fiabilitech avec une conviction : le digital doit être puissant, fluide et aligné avec vos objectifs.",
-    description2: "Aujourd'hui, je transforme cette vision en solutions web et mobile sur mesure, en combinant rigueur technique, gestion de projet agile et une obsession : vos résultats.",
-    callToAction: "Besoin d'un partenaire qui allie créativité et exécution sans compromis?",
+    description1: "Passionné par l'intersection entre le digital et la logistique, j'ai fondé Fiablitech avec la conviction que la technologie est la clé de la transformation de la supply chain moderne. Mon parcours m'a appris que chaque défi logistique cache une opportunité d'innovation.",
+    description2: "Actuellement en formation pour devenir expert en commerce et supply chain, je développe une vision holistique où le digital optimise chaque maillon de la chaîne. Chez Fiablitech, nous créons des solutions qui ne se contentent pas d'être belles - elles transforment réellement la performance commerciale de nos clients.",
+    callToAction: "Convaincu que l'avenir du commerce passe par une supply chain intelligente et digitalisée, je cherche constamment à apprendre et à innover dans ce domaine passionnant.",
     sections: {
       whoIAm: [
-        "Étudiant en Bachelor Supply Chain passionné par la gestion commerciale.",
-        "Co-fondateur de Fiabilitech, agence de développement web et mobile.",
+        "Futur expert en commerce et supply chain, je combine sens du développement commercial et vision logistique pour booster la performance des entreprises.",
+        "Fondateur de Fiablitech, agence de développement web et mobile.",
         "Jeune entrepreneur déterminé avec un excellent sens relationnel."
       ],
       whatIDo: [
-        "Gestion commerciale et relation client dans l'immobilier.",
-        "Développement de solutions digitales avec Fiabilitech.",
-        "Optimisation des processus d'achat et de supply chain."
+        "Formation en Responsable du Développement Commercial (Licence en cours) pour maîtriser les stratégies commerciales modernes.",
+        "Développement de solutions digitales e-commerce avec Fiablitech, spécialisées dans l'optimisation des performances commerciales.",
+        "Formation en Cybersécurité pour sécuriser les environnements digitaux et protéger les données commerciales.",
+        "Préparation d'un futur Master en Supply Chain pour devenir expert en optimisation logistique."
       ],
       myGoals: [
         "Valider mon Bachelor Supply Chain avec excellence.",
@@ -172,7 +173,7 @@ const defaultContent: ContentData = {
   
   projects: {
     title: "Projets Fiabilitech",
-    fiablitechDescription: "Agence de développement web et mobile spécialisée dans les solutions e-commerce innovantes",
+    fiablitechDescription: "Agence de développement web, mobile et e-commerce spécialisée dans les solutions digitales innovantes",
     projects: [
       {
         id: "dim",
@@ -252,7 +253,7 @@ const defaultContent: ContentData = {
     experiences: [
       {
         id: "alternance-immobilier",
-        title: "Alternance Immobilier",
+        title: "Stage alterné Immobilier",
         company: "Agence immobilière « Agence de la gare »",
         period: "2024-2025",
         description: [
@@ -272,11 +273,26 @@ const defaultContent: ContentData = {
     title: "Formation",
     educations: [
       {
+        id: "licence-rdc",
+        degree: "Licence Responsable du Développement Commercial",
+        institution: "ISPN Rouen",
+        period: "2025 - 2026",
+        status: "En cours",
+        description: "Diplôme de niveau Bac+3 (Niveau 6, RNCP 37849) formant aux stratégies commerciales et au management commercial opérationnel.",
+        skills: [
+          "Élaboration et pilotage de stratégies commerciales",
+          "Définition et mise en œuvre d'un plan d'action commercial",
+          "Conception et présentation d'offres adaptées",
+          "Négociation et suivi de la relation client",
+          "Management et animation de projets commerciaux"
+        ]
+      },
+      {
         id: "bts-mco",
         degree: "BTS Management Commercial Opérationnel",
         institution: "Institut Les TOURELLES",
         period: "2023 - 2025",
-        status: "En cours",
+        status: "Obtenu",
         description: "Formation en gestion d'unité commerciale, management d'équipe, gestion de la relation client, et animation et dynamisation de l'offre commerciale.",
         skills: [
           "Développement de la relation client",
@@ -308,7 +324,7 @@ const defaultContent: ContentData = {
   
   footer: {
     name: "SAIBOU ABDOU SALAM",
-    description: "Étudiant en Bachelor Supply Chain et Co-Fondateur de Fiabilitech. Passionné par l'entrepreneuriat et la transformation digitale.",
+    description: "Étudiant en Bachelor Supply Chain et Fondateur de Fiablitech. Passionné par l'entrepreneuriat et la transformation digitale.",
     email: "salamsaibou2002@gmail.com",
     phone: "+33 06 51 10 43 34",
     location: "Rouen, France",
