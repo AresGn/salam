@@ -9,7 +9,7 @@ const aboutSections = [
     title: "Qui je suis",
     description: [
       "Étudiant en Bachelor Supply Chain passionné par la gestion commerciale.",
-      "Co-fondateur de Fiabilitech, agence de développement web et mobile.",
+      "Fondateur de Fiabilitech, agence de développement web et mobile.",
       "Jeune entrepreneur déterminé avec un excellent sens relationnel.",
     ],
     color: "bg-blue-600",

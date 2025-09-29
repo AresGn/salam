@@ -18,7 +18,7 @@
 
 ### Étape 2: Configuration du Profil
 - **Nom**: SAIBOU ABDOU SALAM
-- **Bio**: "Étudiant en Bachelor Supply Chain | Co-Fondateur Fiabilitech | Passionné d'entrepreneuriat et de développement web"
+- **Bio**: "Étudiant en Bachelor Supply Chain | Fondateur Fiabilitech | Passionné d'entrepreneuriat et de développement web"
 - **Photo**: Utiliser `/assets/profil.jpg`
 - **Localisation**: Rouen, France
 - **Site web**: Lien vers le portfolio

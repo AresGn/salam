@@ -7,7 +7,7 @@ SAIBOU ABDOU SALAM | Portfolio
 
 DESCRIPTION DU SITE
 ==================
-Étudiant en Bachelor Supply Chain et Co-Fondateur de Fiabilitech - Recherche d'alternance 2025-2026
+Étudiant en Bachelor Supply Chain et Fondateur de Fiabilitech - Recherche d'alternance 2025-2026
 
 NAVIGATION PRINCIPALE
 ====================
@@ -24,7 +24,7 @@ SAIBOU ABDOU SALAM
 
 Rôles dynamiques :
 - Étudiant en Bachelor Supply Chain
-- Co-Fondateur Fiabilitech
+- Fondateur Fiabilitech
 - Spécialiste en Gestion Commerciale
 - Passionné d'Entrepreneuriat
 - Expert en Relations Client
@@ -51,7 +51,7 @@ Cartes À propos :
 
 1. Qui je suis
 - Étudiant en Bachelor Supply Chain passionné par la gestion commerciale.
-- Co-fondateur de Fiabilitech, agence de développement web et mobile.
+- Fondateur de Fiabilitech, agence de développement web et mobile.
 - Jeune entrepreneur déterminé avec un excellent sens relationnel.
 
 2. Ce que je fais
@@ -293,7 +293,7 @@ SECTION FOOTER
 ==============
 SAIBOU ABDOU SALAM
 
-Étudiant en Bachelor Supply Chain et Co-Fondateur de Fiabilitech.
+Étudiant en Bachelor Supply Chain et Fondateur de Fiabilitech.
 Passionné par l'entrepreneuriat et la transformation digitale.
 
 Contact :
@@ -314,7 +314,7 @@ INFORMATIONS SUPPLÉMENTAIRES
 ============================
 
 À propos de Fiabilitech :
-Co-fondateur de Fiabilitech, une agence de développement web et mobile spécialisée dans la création de designs graphiques et de maquettes UI/UX. Chez Fiabilitech, nous combinons expertise technique et vision commerciale pour offrir des solutions digitales complètes et innovantes.
+Fondateur de Fiabilitech, une agence de développement web et mobile spécialisée dans la création de designs graphiques et de maquettes UI/UX. Chez Fiabilitech, nous combinons expertise technique et vision commerciale pour offrir des solutions digitales complètes et innovantes.
 
 Services Fiabilitech :
 - Développement Web
@@ -329,7 +329,7 @@ Objectifs professionnels :
 - Poursuivre vers un master professionnelle
 
 Réalisations :
-- Co-fondateur de Fiabilitech
+- Fondateur de Fiabilitech
 - Développement de sites e-commerce pour des marques reconnues
 - Alternance réussie dans l'immobilier
 

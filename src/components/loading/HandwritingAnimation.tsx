@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 export function HandwritingAnimation() {
@@ -42,7 +41,7 @@ export function HandwritingAnimation() {
           transition={{ duration: 0.6, delay: 2.5 }}
           className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 px-2 leading-relaxed"
         >
-          <span className="block sm:inline">Co-Fondateur Fiabilitech</span>
+          <span className="block sm:inline">Fondateur de Fiabilitech</span>
           <span className="hidden sm:inline mx-2">•</span>
           <span className="block sm:inline">Étudiant Supply Chain</span>
         </motion.div>

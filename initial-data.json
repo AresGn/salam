@@ -3,7 +3,7 @@
     "personal_info": {
       "name": "SAIBOU ABDOU SALAM",
       "role": "Étudiant en Bachelor Supply Chain",
-      "secondary_role": "Co-Fondateur Fiabilitech",
+      "secondary_role": "Fondateur Fiabilitech",
       "age": "23",
       "email": "salamsaibou2002@gmail.com",
       "phone": "+33 06 51 10 43 34",
@@ -29,7 +29,7 @@
     },
     "fiabilitech_info": {
       "title": "À propos de Fiabilitech",
-      "description": "Co-fondateur de Fiabilitech, une agence de développement web et mobile spécialisée dans la création de designs graphiques et de maquettes UI/UX. Chez Fiabilitech, nous combinons expertise technique et vision commerciale pour offrir des solutions digitales complètes et innovantes.",
+      "description": "Fondateur de Fiabilitech, une agence de développement web et mobile spécialisée dans la création de designs graphiques et de maquettes UI/UX. Chez Fiabilitech, nous combinons expertise technique et vision commerciale pour offrir des solutions digitales complètes et innovantes.",
       "services": [
         {
           "name": "Développement Web",
@@ -284,7 +284,7 @@
   },
   "metadata": {
     "site_title": "SAIBOU ABDOU SALAM | Portfolio",
-    "site_description": "Étudiant en Bachelor Supply Chain et Co-Fondateur de Fiabilitech - Recherche d'alternance 2025-2026",
+    "site_description": "Étudiant en Bachelor Supply Chain et Fondateur de Fiabilitech - Recherche d'alternance 2025-2026",
     "site_keywords": "portfolio, alternance, Bachelor Supply Chain, achats, logistique, Rouen, développement web, Fiabilitech, entrepreneur",
     "author": "SAIBOU ABDOU SALAM",
     "last_updated": "2024",
@@ -314,7 +314,7 @@
       "Certification Techniques Commerciales"
     ],
     "achievements": [
-      "Co-fondateur de Fiabilitech",
+      "Fondateur de Fiabilitech",
       "Développement de sites e-commerce pour des marques reconnues",
       "Alternance réussie dans l'immobilier"
     ],
