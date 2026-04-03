@@ -1,0 +1,327 @@
+{
+  "about": {
+    "personal_info": {
+      "name": "SAIBOU ABDOU SALAM",
+      "role": "Étudiant en Bachelor Supply Chain",
+      "secondary_role": "Fondateur Fiabilitech",
+      "age": "23",
+      "email": "salamsaibou2002@gmail.com",
+      "phone": "+33 06 51 10 43 34",
+      "phone_alternative": "+33 0651104334",
+      "location": "Rouen, France",
+      "full_address": "7 rue Saint André, 76000 Rouen",
+      "linkedin": "linkedin.com/in/saibou-abdou-salam",
+      "profile_image": "/images/profil.jpg",
+      "bio": "Actuellement en formation Bachelor Supply Chain, je suis à la recherche d'une alternance me permettant de mettre en pratique mes compétences commerciales , managériales et logistique. Passionné par le monde du commerce et doté d'un excellent sens relationnel, je souhaite m'investir pleinement dans une entreprise dynamique pour développer mon expérience professionnelle.",
+      "bio_extended": "Passionné par le digital et l'entrepreneuriat, j'associe compétences en développement web et expertise commerciale. Actuellement en alternance dans l'immobilier, je recherche de nouvelles opportunités dans les achats et la supply chain.",
+      "quote": "Je suis jeune, déterminé et motivé. Je m'intègre facilement au sein d'une équipe et suis à la recherche d'expériences enrichissantes dans un environnement stimulant, qui me permette d'élargir mes compétences et d'explorer divers domaines et secteurs d'activité.",
+      "status": "Recherche d'alternance 2025-2026 • Bachelor Achats et Supply Chain",
+      "interests": [
+        { "name": "Sport", "icon": "🏃‍♂️" },
+        { "name": "Lecture", "icon": "📚" },
+        { "name": "Voyages", "icon": "✈️" },
+        { "name": "Nouvelles technologies", "icon": "💻" },
+        { "name": "Cuisine", "icon": "🍳" },
+        { "name": "Musique", "icon": "🎵" },
+        { "name": "Design", "icon": "🎨" },
+        { "name": "Entrepreneuriat", "icon": "💼" }
+      ]
+    },
+    "fiabilitech_info": {
+      "title": "À propos de Fiabilitech",
+      "description": "Fondateur de Fiabilitech, une agence de développement web et mobile spécialisée dans la création de designs graphiques et de maquettes UI/UX. Chez Fiabilitech, nous combinons expertise technique et vision commerciale pour offrir des solutions digitales complètes et innovantes.",
+      "services": [
+        {
+          "name": "Développement Web",
+          "icon": "FaCode"
+        },
+        {
+          "name": "Apps Mobile",
+          "icon": "FaCode"
+        },
+        {
+          "name": "Design UI/UX",
+          "icon": "FaCode"
+        },
+        {
+          "name": "Solutions Business",
+          "icon": "FaCode"
+        }
+      ]
+    },
+    "professional_objectives": [
+      "Valider mon Bachelor Supply Chain avec excellence",
+      "Acquérir des compétences en optimisation de la politique de gestion et d'approvisionnement d'une organisation en vu de ma formation Bachelor Supply Chain",
+      "Développer mon réseau professionnel",
+      "Poursuivre vers un master professionnelle"
+    ]
+  },
+  "education": [
+    {
+      "id": "bts-mco",
+      "title": "BTS Management Commercial Opérationnel",
+      "institution": "Institut Les TOURELLES",
+      "location": "Rouen",
+      "period": "2023 - 2025",
+      "description": "Formation en gestion d'unité commerciale, management d'équipe, gestion de la relation client, et animation et dynamisation de l'offre commerciale.",
+      "skills": [
+        "Développement de la relation client",
+        "Animation et dynamisation de l'offre commerciale",
+        "Management opérationnel de l'équipe commerciale",
+        "Gestion opérationnelle",
+        "Communication commerciale"
+      ],
+      "icon": "FaGraduationCap",
+      "color": "bg-blue-600"
+    },
+    {
+      "id": "bac",
+      "title": "Bac Professionnel Gestion Administrative",
+      "institution": "Institut Les TOURELLES",
+      "location": "Rouen",
+      "period": "2019 - 2022",
+      "description": "Baccalauréat Sciences et Technologies du Management et de la Gestion, spécialité Ressources Humaines et Communication.",
+      "skills": [
+        "Économie et droit",
+        "Management des organisations",
+        "Sciences de gestion",
+        "Communication",
+        "Gestion des ressources humaines"
+      ],
+      "icon": "FaGraduationCap",
+      "color": "bg-indigo-600"
+    },
+    {
+      "id": "cert-commercial",
+      "title": "Certification Techniques Commerciales",
+      "institution": "Centre de Formation Professionnelle",
+      "location": "Rouen",
+      "period": "2023",
+      "description": "Certification professionnelle sur les techniques de vente et négociation commerciale.",
+      "skills": [
+        "Techniques de vente",
+        "Négociation commerciale",
+        "Gestion de la relation client",
+        "Prospection commerciale"
+      ],
+      "icon": "FaCertificate",
+      "color": "bg-green-600"
+    },
+    {
+      "id": "cert-pix",
+      "title": "Certification PIX",
+      "institution": "Plateforme nationale",
+      "location": "Formation en ligne",
+      "period": "2022",
+      "description": "Certification des compétences numériques selon le référentiel européen DIGCOMP.",
+      "skills": [
+        "Maîtrise des outils numériques",
+        "Communication et collaboration",
+        "Création de contenu digital",
+        "Protection des données",
+        "Résolution de problèmes techniques"
+      ],
+      "icon": "FaCertificate",
+      "color": "bg-purple-600"
+    }
+  ],
+  "skills": {
+    "technical": [
+      {
+        "name": "Développement Web & Mobile",
+        "description": "Création d'applications et sites web responsive avec des technologies modernes et performantes.",
+        "icon": "FaCode",
+        "level": 85
+      },
+      {
+        "name": "Design UI/UX",
+        "description": "Conception d'interfaces utilisateur intuitives et esthétiques offrant une expérience utilisateur exceptionnelle.",
+        "icon": "FaPaintBrush",
+        "level": 80
+      },
+      {
+        "name": "Gestion Commerciale",
+        "description": "Management de projets, relation client et stratégies commerciales pour optimiser la croissance et la satisfaction client.",
+        "icon": "FaChartLine",
+        "level": 90
+      }
+    ],
+    "soft_skills": [
+      "Excellent sens relationnel",
+      "Esprit d'équipe",
+      "Adaptabilité",
+      "Leadership",
+      "Communication",
+      "Gestion du stress",
+      "Créativité",
+      "Sens de l'organisation"
+    ]
+  },
+  "experience": [
+    {
+      "id": "agencegare",
+      "title": "Agence immobilière « Agence de la gare »",
+      "subtitle": "Alternance Immobilier",
+      "location": "Rouen",
+      "date": "2024-2025",
+      "content": [
+        "Accueil et orientation des clients : premier point de contact à l'entrée de l'agence",
+        "Organisation de visites guidées : accompagnement des clients lors des visites de biens",
+        "Estimation de biens immobiliers : participation à l'évaluation de la valeur des propriétés",
+        "Gestion administrative : suivi et mise à jour des dossiers clients",
+        "Communication digitale : gestion des réseaux sociaux de l'agence",
+        "Prospection commerciale : recherche de nouveaux clients et prise de mandats",
+        "Valorisation des biens : mise en valeur des annonces en vitrine"
+      ],
+      "color": "border-indigo-600"
+    },
+    {
+      "id": "uexpress",
+      "title": "U Express",
+      "subtitle": "Stage de 8 semaines",
+      "location": "Rouen",
+      "date": "2023",
+      "content": [
+        "Réception des commandes et vérification",
+        "Comptabilité et suivi des factures",
+        "Étiquetage des prix et mise en rayon",
+        "Assistance à la clientèle et conseil"
+      ],
+      "color": "border-blue-600"
+    },
+    {
+      "id": "tourelles",
+      "title": "Institut Les TOURELLES",
+      "subtitle": "Stage au CDI (bibliothèque)",
+      "location": "Rouen",
+      "date": "2022",
+      "content": [
+        "Classement et rangement des documents sur l'orientation",
+        "Accueil d'un fournisseur et gestion de la relation",
+        "Choix de livres pour le CDI, traitement et suivi de la commande",
+        "Réception, classement et mise à disposition des magazines",
+        "Tableau comparatif de caisson de bureau pour le CDI"
+      ],
+      "color": "border-green-600"
+    },
+    {
+      "id": "pharmacie",
+      "title": "Pharmacie d'Argenteuil Joliot curie",
+      "subtitle": "Stage",
+      "location": "Argenteuil",
+      "date": "2020",
+      "content": [
+        "Accueil des clients et gestion des demandes",
+        "Réception des commandes et vérification des produits",
+        "Classement et mise en disposition des produits en rayon"
+      ],
+      "color": "border-purple-600"
+    },
+    {
+      "id": "bibliotheque",
+      "title": "Bibliothèque de Oissel",
+      "subtitle": "Stage",
+      "location": "Oissel",
+      "date": "Janvier 2017",
+      "content": [
+        "Accueil des clients et orientation",
+        "Classement et rangement des documents"
+      ],
+      "color": "border-amber-600"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "DIM",
+      "description": "Nous avons développé une boutique en ligne complète pour DIM, une marque emblématique de lingerie française qui souhaitait optimiser son expérience de vente en ligne. Notre approche a combiné un design élégant et moderne reflétant l'identité premium de la marque avec une expérience utilisateur soigneusement optimisée pour maximiser les conversions.",
+      "tags": ["E-commerce", "Responsive", "UX/UI", "Gestion de stock", "Click & Collect"],
+      "type": "ecommerce",
+      "imageUrl": "https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=DIM+E-commerce",
+      "website": "https://www.dim.com/"
+    },
+    {
+      "id": 2,
+      "title": "By G2S Immobilier",
+      "description": "By G2S Immobilier, une agence immobilière basée à Bondy Paris, souhaitait développer une présence en ligne reflétant son expertise et permettant de présenter son portefeuille de biens. Notre équipe a conçu un site web élégant et fonctionnel mettant en valeur les propriétés disponibles et facilitant le contact avec les clients potentiels.",
+      "tags": ["Immobilier", "Recherche avancée", "Galerie photo", "Responsive"],
+      "type": "immobilier",
+      "imageUrl": "https://via.placeholder.com/800x400/8B5CF6/FFFFFF?text=G2S+Immobilier",
+      "website": "https://www.byg2simmobilier.fr/"
+    },
+    {
+      "id": 3,
+      "title": "Maxi Meubles",
+      "description": "Maxi Meubles souhaitait lancer une boutique en ligne pour commercialiser leur gamme de mobilier design à prix abordable. Notre équipe a conçu une plateforme e-commerce complète, mettant en valeur leur catalogue de produits et optimisant l'expérience d'achat pour maximiser les conversions.",
+      "tags": ["E-commerce", "Mobilier", "UX/UI", "Catalogue produit", "Responsive"],
+      "type": "ecommerce",
+      "imageUrl": "https://via.placeholder.com/800x400/10B981/FFFFFF?text=Maxi+Meubles",
+      "website": "https://www.maxi-meubles.fr/"
+    }
+  ],
+  "contact": {
+    "email": "salamsaibou2002@gmail.com",
+    "phone": "+33 06 51 10 43 34",
+    "phone_alternative": "+33 0651104334",
+    "location": "7 rue Saint André, 76000 Rouen",
+    "city": "Rouen, France",
+    "linkedin": "https://linkedin.com/in/saibou-abdou-salam",
+    "social_links": {
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/in/saibou-abdou-salam",
+      "github": "https://github.com/",
+      "twitter": "https://twitter.com/"
+    },
+    "form_settings": {
+      "success_message": "Message envoyé ! Merci pour votre message. Je vous répondrai dans les plus brefs délais.",
+      "error_message": "Une erreur s'est produite. Veuillez réessayer plus tard."
+    },
+    "availability": {
+      "status": "Recherche d'alternance",
+      "period": "2025-2026",
+      "type": "Bachelor Achats et Supply Chain"
+    }
+  },
+  "metadata": {
+    "site_title": "SAIBOU ABDOU SALAM | Portfolio",
+    "site_description": "Étudiant en Bachelor Supply Chain et Fondateur de Fiabilitech - Recherche d'alternance 2025-2026",
+    "site_keywords": "portfolio, alternance, Bachelor Supply Chain, achats, logistique, Rouen, développement web, Fiabilitech, entrepreneur",
+    "author": "SAIBOU ABDOU SALAM",
+    "last_updated": "2024",
+    "version": "2.0",
+    "language": "fr",
+    "theme_colors": {
+      "primary": "#4f46e5",
+      "secondary": "#3b82f6",
+      "accent": "#8b5cf6"
+    }
+  },
+  "additional_info": {
+    "languages": [
+      {
+        "name": "Français",
+        "level": "Natif",
+        "code": "fr"
+      },
+      {
+        "name": "Anglais",
+        "level": "Intermédiaire",
+        "code": "en"
+      }
+    ],
+    "certifications": [
+      "Certification PIX - Compétences numériques",
+      "Certification Techniques Commerciales"
+    ],
+    "achievements": [
+      "Fondateur de Fiabilitech",
+      "Développement de sites e-commerce pour des marques reconnues",
+      "Alternance réussie dans l'immobilier"
+    ],
+    "current_focus": [
+      "Recherche d'alternance en Supply Chain",
+      "Développement de Fiabilitech",
+      "Formation continue en gestion des achats"
+    ]
+  }
+}

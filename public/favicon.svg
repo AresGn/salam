@@ -1,0 +1,13 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#1e293b"/>
+  
+  <!-- Blue square for "S" -->
+  <rect x="60" y="180" width="120" height="120" fill="#3b82f6" rx="8"/>
+  
+  <!-- White "S" letter -->
+  <text x="120" y="270" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="central">S</text>
+  
+  <!-- "alam" text in white -->
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="white" dominant-baseline="central">alam</text>
+</svg>

@@ -1,0 +1,370 @@
+PORTFOLIO SAIBOU ABDOU SALAM - CONTENU TEXTUEL COMPLET
+================================================================
+
+TITRE DU SITE
+=============
+SAIBOU ABDOU SALAM | Portfolio
+
+DESCRIPTION DU SITE
+==================
+Étudiant en Bachelor Supply Chain et Fondateur de Fiabilitech - Recherche d'alternance 2025-2026
+
+NAVIGATION PRINCIPALE
+====================
+- Accueil
+- À propos
+- Compétences
+- Projets
+- Parcours
+
+SECTION HERO (ACCUEIL)
+=====================
+Salut! 👋 Je suis
+SAIBOU ABDOU SALAM
+
+Rôles dynamiques :
+- Étudiant en Bachelor Supply Chain
+- Fondateur Fiabilitech
+- Spécialiste en Gestion Commerciale
+- Passionné d'Entrepreneuriat
+- Expert en Relations Client
+
+Informations de contact :
+- Email: salamsaibou2002@gmail.com
+- Téléphone: +33 06 51 10 43 34
+- Localisation: Rouen, France
+
+SECTION À PROPOS
+===============
+About Me
+
+Texte d'introduction :
+Passionné par la tech et l'entrepreneuriat, j'ai lancé Fiabilitech avec une conviction : le digital doit être puissant, fluide et aligné avec vos objectifs.
+
+Aujourd'hui, je transforme cette vision en solutions web et mobile sur mesure, en combinant rigueur technique, gestion de projet agile et une obsession : vos résultats.
+
+Besoin d'un partenaire qui allie créativité et exécution sans compromis?
+
+BOUTON D'APPEL À L'ACTION : Parlons-en
+
+Cartes À propos :
+
+1. Qui je suis
+- Étudiant en Bachelor Supply Chain passionné par la gestion commerciale.
+- Fondateur de Fiabilitech, agence de développement web et mobile.
+- Jeune entrepreneur déterminé avec un excellent sens relationnel.
+
+2. Ce que je fais
+- Gestion commerciale et relation client dans l'immobilier.
+- Développement de solutions digitales avec Fiabilitech.
+- Optimisation des processus d'achat et de supply chain.
+
+3. Mes objectifs
+- Valider mon Bachelor Supply Chain avec excellence.
+- Développer Fiabilitech et créer des solutions innovantes.
+- Acquérir une expertise en gestion des achats et approvisionnement.
+
+4. Ma philosophie
+- L'innovation doit servir l'efficacité commerciale.
+- L'excellence relationnelle est la clé du succès.
+- L'apprentissage continu ouvre toutes les opportunités.
+
+SECTION COMPÉTENCES
+==================
+Compétences
+
+Catégories :
+- Toutes
+- Commerciales
+- Techniques
+
+Compétences commerciales :
+1. Communication client (90%) - Capacité à communiquer efficacement avec les clients et comprendre leurs besoins
+2. Vente omnicanal (75%) - Maîtrise des techniques de vente à travers différents canaux (physique, digital)
+3. Études commerciales (70%) - Analyse et exploitation des études de marché et comportements clients
+
+Compétences techniques :
+1. Développement Web & Mobile (85%) - Création d'applications et sites web responsive avec des technologies modernes et performantes
+2. Design UI/UX (80%) - Conception d'interfaces utilisateur intuitives et esthétiques offrant une expérience utilisateur exceptionnelle
+3. Gestion Commerciale (90%) - Management de projets, relation client et stratégies commerciales pour optimiser la croissance et la satisfaction client
+
+Soft Skills :
+- Excellent sens relationnel
+- Esprit d'équipe
+- Adaptabilité
+- Leadership
+- Communication
+- Gestion du stress
+- Créativité
+- Sens de l'organisation
+
+SECTION PROJETS
+===============
+Projets Fiabilitech
+
+1. DIM
+Description : Nous avons développé une boutique en ligne complète pour DIM, une marque emblématique de lingerie française qui souhaitait optimiser son expérience de vente en ligne. Notre approche a combiné un design élégant et moderne reflétant l'identité premium de la marque avec une expérience utilisateur soigneusement optimisée pour maximiser les conversions.
+Technologies : React, Tailwind CSS, TypeScript, Stripe
+Site web : https://www.dim.com/
+
+2. By G2S Immobilier
+Description : By G2S Immobilier, une agence immobilière basée à Bondy Paris, souhaitait développer une présence en ligne reflétant son expertise et permettant de présenter son portefeuille de biens. Notre équipe a conçu un site web élégant et fonctionnel mettant en valeur les propriétés disponibles et facilitant le contact avec les clients potentiels.
+Technologies : React, Tailwind CSS, TypeScript, Stripe
+Site web : https://www.byg2simmobilier.fr/
+
+3. Maxi Meubles
+Description : Maxi Meubles souhaitait lancer une boutique en ligne pour commercialiser leur gamme de mobilier design à prix abordable. Notre équipe a conçu une plateforme e-commerce complète, mettant en valeur leur catalogue de produits et optimisant l'expérience d'achat pour maximiser les conversions.
+Technologies : React, Tailwind CSS, TypeScript, Stripe
+Site web : https://www.maxi-meubles.fr/
+
+SECTION CENTRES D'INTÉRÊT
+=========================
+Centres d'intérêt
+
+1. Sport - Activités sportives et bien-être
+2. Lecture - Développement personnel et professionnel
+3. Voyages - Découverte de nouvelles cultures
+4. Nouvelles technologies - Innovation et digital
+5. Cuisine - Art culinaire et gastronomie
+6. Musique - Écoute et découverte musicale
+7. Design - Créativité et esthétique
+8. Entrepreneuriat - Innovation et création d'entreprise
+
+SECTION BLOG
+============
+Blog
+
+📝 Blog en préparation
+
+Je prépare actuellement du contenu sur l'entrepreneuriat, la supply chain, et le développement web. Restez connectés pour découvrir mes articles !
+
+Sujets à venir :
+- Supply Chain
+- Entrepreneuriat
+- Développement Web
+
+SECTION EXPÉRIENCE PROFESSIONNELLE
+==================================
+Expérience Professionnelle
+
+1. Alternance Immobilier
+Entreprise : Agence immobilière « Agence de la gare »
+Période : 2024-2025
+Description : 
+- Accueil et orientation des clients : premier point de contact à l'entrée de l'agence
+- Organisation de visites guidées : accompagnement des clients lors des visites de biens
+- Estimation de biens immobiliers : participation à l'évaluation de la valeur des propriétés
+- Gestion administrative : suivi et mise à jour des dossiers clients
+- Communication digitale : gestion des réseaux sociaux de l'agence
+- Prospection commerciale : recherche de nouveaux clients et prise de mandats
+- Valorisation des biens : mise en valeur des annonces en vitrine
+
+2. Stage de 8 semaines
+Entreprise : Carrefour express
+Période : 2023-2024
+Description :
+- Compétences en vente et relation client: Accueil et conseil client, Techniques de vente (argumentation, fidélisation), Gestion des réclamations, Mise en place d'animations commerciales
+- Compétences en gestion de magasin: Réception et contrôle des livraisons, Mise en rayon (facing, rotation des produits), Gestion des stocks et des inventaires, Suivi des indicateurs de performance (chiffre d'affaires, marges)
+- Compétences en caisse: Encaissement et rendu monnaie, Gestion des moyens de paiement, Ouverture et fermeture de caisse, Application des procédures de sécurité
+- Compétences en hygiène et sécurité: Respect des normes d'hygiène (surtout pour les produits frais), Respect des consignes de sécurité alimentaire, Prévention des pertes et vols
+- Compétences en travail d'équipe et autonomie: Collaboration avec les collègues et la hiérarchie, Capacité d'adaptation à différents postes, Prise d'initiative et autonomie progressive
+- Compétences en gestion administrative (selon le poste): Suivi des commandes fournisseurs, Gestion des documents commerciaux, Participation à l'organisation des plannings
+
+3. Stage de 8 semaines
+Entreprise : U Express
+Période : 2023
+Description :
+- Réception des commandes et vérification
+- Comptabilité et suivi des factures
+- Étiquetage des prix et mise en rayon
+- Assistance à la clientèle et conseil
+
+4. Stage au CDI (bibliothèque)
+Entreprise : Institut Les TOURELLES
+Période : 2022
+Description :
+- Classement et rangement des documents sur l'orientation
+- Accueil d'un fournisseur et gestion de la relation
+- Choix de livres pour le CDI, traitement et suivi de la commande
+- Réception, classement et mise à disposition des magazines
+- Tableau comparatif de caisson de bureau pour le CDI
+
+5. Stage
+Entreprise : Pharmacie d'Argenteuil Joliot curie
+Période : 2020
+Description :
+- Accueil des clients et gestion des demandes
+- Réception des commandes et vérification des produits
+- Classement et mise en disposition des produits en rayon
+
+6. Stage
+Entreprise : Bibliothèque de Oissel
+Période : Janvier 2017
+Description :
+- Accueil des clients et orientation
+- Classement et rangement des documents
+
+SECTION CERTIFICATIONS
+======================
+Certifications
+
+1. Certification PIX
+Organisme : Plateforme nationale
+Date : 2022
+Description : Certification des compétences numériques selon le référentiel européen DIGCOMP.
+Compétences :
+- Maîtrise des outils numériques
+- Communication et collaboration
+- Création de contenu digital
+- Protection des données
+- Résolution de problèmes techniques
+
+2. Certification Techniques Commerciales
+Organisme : Centre de Formation Professionnelle
+Date : 2023
+Description : Certification professionnelle sur les techniques de vente et négociation commerciale.
+Compétences :
+- Techniques de vente
+- Négociation commerciale
+- Gestion de la relation client
+- Prospection commerciale
+
+SECTION FORMATION
+=================
+Formation
+
+1. BTS Management Commercial Opérationnel
+Institution : Institut Les TOURELLES
+Période : 2023 - 2025
+Statut : En cours
+Description : Formation en gestion d'unité commerciale, management d'équipe, gestion de la relation client, et animation et dynamisation de l'offre commerciale.
+Compétences :
+- Développement de la relation client
+- Animation et dynamisation de l'offre commerciale
+- Management opérationnel de l'équipe commerciale
+- Gestion opérationnelle
+- Communication commerciale
+
+2. Bac Professionnel Gestion Administrative
+Institution : Institut Les TOURELLES
+Période : 2019 - 2022
+Description : Baccalauréat Sciences et Technologies du Management et de la Gestion, spécialité Ressources Humaines et Communication.
+Compétences :
+- Économie et droit
+- Management des organisations
+- Sciences de gestion
+- Communication
+- Gestion des ressources humaines
+
+SECTION LANGUES
+===============
+Langues
+
+1. Français
+Niveau : Natif (100%)
+
+2. Anglais
+Niveau : Intermédiaire (70%)
+
+Note : Ouvert aux opportunités internationales
+
+SECTION CONTACT
+===============
+Contactez-moi
+
+Restons en contact
+
+Je suis toujours ouvert aux discussions sur de nouveaux projets, des idées créatives, ou des opportunités d'alternance en Supply Chain.
+
+Informations de contact :
+- Email : salamsaibou2002@gmail.com
+- Téléphone : +33 06 51 10 43 34
+- LinkedIn : linkedin.com/in/saibou-abdou-salam
+
+Statut de disponibilité :
+- Recherche d'alternance 2025-2026
+- Bachelor Achats et Supply Chain
+
+Messages automatiques :
+- Message de succès : "Message envoyé ! Merci pour votre message. Je vous répondrai dans les plus brefs délais."
+- Message d'erreur : "Une erreur s'est produite. Veuillez réessayer plus tard."
+
+SECTION FOOTER
+==============
+SAIBOU ABDOU SALAM
+
+Étudiant en Bachelor Supply Chain et Fondateur de Fiabilitech.
+Passionné par l'entrepreneuriat et la transformation digitale.
+
+Contact :
+- Email : salamsaibou2002@gmail.com
+- Téléphone : +33 06 51 10 43 34
+- Localisation : Rouen, France
+
+Liens rapides :
+- À propos
+- Compétences
+- Projets
+- Parcours
+
+Copyright : © 2024 SAIBOU ABDOU SALAM. Tous droits réservés.
+Note : Fait avec ❤️ pour ma recherche d'alternance
+
+INFORMATIONS SUPPLÉMENTAIRES
+============================
+
+À propos de Fiabilitech :
+Fondateur de Fiabilitech, une agence de développement web et mobile spécialisée dans la création de designs graphiques et de maquettes UI/UX. Chez Fiabilitech, nous combinons expertise technique et vision commerciale pour offrir des solutions digitales complètes et innovantes.
+
+Services Fiabilitech :
+- Développement Web
+- Apps Mobile
+- Design UI/UX
+- Solutions Business
+
+Objectifs professionnels :
+- Valider mon Bachelor Supply Chain avec excellence
+- Acquérir des compétences en optimisation de la politique de gestion et d'approvisionnement d'une organisation en vu de ma formation Bachelor Supply Chain
+- Développer mon réseau professionnel
+- Poursuivre vers un master professionnelle
+
+Réalisations :
+- Fondateur de Fiabilitech
+- Développement de sites e-commerce pour des marques reconnues
+- Alternance réussie dans l'immobilier
+
+Focus actuel :
+- Recherche d'alternance en Supply Chain
+- Développement de Fiabilitech
+- Formation continue en gestion des achats
+
+Citation personnelle :
+"Je suis jeune, déterminé et motivé. Je m'intègre facilement au sein d'une équipe et suis à la recherche d'expériences enrichissantes dans un environnement stimulant, qui me permette d'élargir mes compétences et d'explorer divers domaines et secteurs d'activité."
+
+Biographie étendue :
+"Passionné par le digital et l'entrepreneuriat, j'associe compétences en développement web et expertise commerciale. Actuellement en alternance dans l'immobilier, je recherche de nouvelles opportunités dans les achats et la supply chain."
+
+Statut actuel :
+"Recherche d'alternance 2025-2026 • Bachelor Achats et Supply Chain"
+
+Adresse complète :
+7 rue Saint André, 76000 Rouen
+
+Téléphone alternatif :
++33 0651104334
+
+Âge : 23 ans
+
+Réseaux sociaux :
+- LinkedIn : https://linkedin.com/in/saibou-abdou-salam
+- Instagram : https://instagram.com/
+- GitHub : https://github.com/
+- Twitter : https://twitter.com/
+
+Mots-clés du site :
+portfolio, alternance, Bachelor Supply Chain, achats, logistique, Rouen, développement web, Fiabilitech, entrepreneur
+
+Langue du site : Français (fr)
+
+Version : 2.0
+Dernière mise à jour : 2025
