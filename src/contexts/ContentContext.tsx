@@ -351,12 +351,12 @@ const ContentContext = createContext<ContentContextType | undefined>(undefined);
 
 export function ContentProvider({ children }: { children: React.ReactNode }) {
   const [content, setContent] = useState<ContentData>(() => {
-    const saved = localStorage.getItem('portfolio-content');
+    const saved = localStorage.getItem('portfolio-content-v2');
     return saved ? JSON.parse(saved) : defaultContent;
   });
 
   useEffect(() => {
-    localStorage.setItem('portfolio-content', JSON.stringify(content));
+    localStorage.setItem('portfolio-content-v2', JSON.stringify(content));
   }, [content]);
 
   const updateContent = (section: keyof ContentData, data: any) => {
@@ -368,7 +368,7 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
 
   const resetContent = () => {
     setContent(defaultContent);
-    localStorage.removeItem('portfolio-content');
+    localStorage.removeItem('portfolio-content-v2');
   };
 
   return (
