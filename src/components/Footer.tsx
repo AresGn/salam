@@ -86,7 +86,14 @@ export function Footer() {
 
           {/* Colonne 3: Fiabilitech */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-purple-400">Fiabilitech</h4>
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src={`${import.meta.env.BASE_URL}images/fiablitech-logo.jpeg`} 
+                alt="Fiablitech" 
+                className="w-10 h-10 object-contain rounded-lg"
+              />
+              <h4 className="text-lg font-semibold text-purple-400 m-0">Fiabilitech</h4>
+            </div>
             <p className="text-gray-300 text-sm mb-4">
               Agence de développement web et mobile spécialisée dans les solutions e-commerce.
             </p>

@@ -3,10 +3,10 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 import { useContent } from '../../contexts/ContentContext';
 
 const flagMap: Record<string, string> = {
-  france: '/svg/france-svgrepo-com.svg',
-  benin: '/svg/benin-svgrepo-com.svg',
-  chine: '/svg/china-svgrepo-com.svg',
-  maroc: '/svg/morocco-svgrepo-com.svg',
+  france: `${import.meta.env.BASE_URL}svg/france-svgrepo-com.svg`,
+  benin: `${import.meta.env.BASE_URL}svg/benin-svgrepo-com.svg`,
+  chine: `${import.meta.env.BASE_URL}svg/china-svgrepo-com.svg`,
+  maroc: `${import.meta.env.BASE_URL}svg/morocco-svgrepo-com.svg`,
 };
 
 interface ContactItemProps {
@@ -30,11 +30,15 @@ function ContactItem({ icon, text, href }: ContactItemProps) {
   );
 }
 
+const normalizeCountryName = (str: string) => {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toLowerCase();
+};
+
 function LocationFlags() {
   const { content } = useContent();
   const { location } = content.hero;
 
-  const countries = location.split(',').map(c => c.trim().toLowerCase());
+  const countries = location.split(',').map(normalizeCountryName);
 
   return (
     <div className="flex items-center gap-3 px-4 py-1">
@@ -44,11 +48,16 @@ function LocationFlags() {
       <div className="flex items-center gap-2">
         {countries.map((country, index) => (
           <React.Fragment key={country}>
-            <img
-              src={flagMap[country]}
-              alt={country}
-              className="w-6 h-4 object-cover rounded-sm"
-            />
+            {flagMap[country] && (
+              <img
+                src={flagMap[country]}
+                alt={country}
+                className="w-6 h-4 object-cover rounded-sm"
+              />
+            )}
+            {!flagMap[country] && (
+              <span className="text-gray-600 dark:text-gray-300 capitalize text-sm">{country}</span>
+            )}
             {index < countries.length - 1 && (
               <span className="text-gray-400">•</span>
             )}
