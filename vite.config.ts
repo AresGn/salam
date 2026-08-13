@@ -8,6 +8,9 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   server: {
-    allowedHosts: ['p2yus3-ip-154-72-112-246.tunnelmole.net'],
+    allowedHosts: [
+      'p2yus3-ip-154-72-112-246.tunnelmole.net',
+      'kc0hes-ip-154-72-113-32.tunnelmole.net',
+    ],
   },
 });

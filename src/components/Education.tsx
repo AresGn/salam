@@ -3,18 +3,20 @@ import { EducationCard } from './ui/EducationCard';
 
 const education = [
   {
-    degree: 'Bachelor en Responsable du Développement Commercial',
-    institution: 'ISPN Rouen',
-    period: '2025 - 2026',
-    score: 'En cours (Bac +5, RNCP 37849)',
-    description: 'Diplôme formant aux stratégies commerciales avancées et au management commercial opérationnel, avec une approche pratique et projetée sur le terrain.',
-    skills: [
-      'Élaboration et pilotage de stratégies commerciales',
-      'Définition et mise en œuvre d\'un plan d\'action commercial',
-      'Conception et présentation d\'offres adaptées aux besoins clients',
-      'Négociation, suivi et fidélisation de la relation client',
-      'Analyse de marché et identification des opportunités de croissance',
-      'Business development et création de nouvelles offres commerciales'
+    degree: 'Responsable du Développement Commercial (RDC)',
+    institution: 'IMCP / ISPN Rouen',
+    period: '2026',
+    score: 'Certification RNCP niveau 6 – Validée (Admis)',
+    description: 'Certification professionnelle RNCP niveau 6 – Validée en 2026. Total : 60 crédits ECTS – Décision du jury : Admis.',
+    blocks: [
+      { label: 'Piloter le développement opérationnel du plan d\'actions commerciales', ects: '19 ECTS' },
+      { label: 'Développer la stratégie de croissance de l\'entreprise', ects: '23 ECTS' },
+      { label: 'Manager une équipe commerciale', ects: '18 ECTS' }
+    ],
+    note: 'Toutes les compétences ont été validées lors du Grand Oral 2026.',
+    documents: [
+      { label: 'Grand Oral RDC (PDF)', href: '/documents/RDC_Grand_oral/Grand-oral-RDC.pdf' },
+      { label: 'Relevé de compétences (PDF)', href: '/documents/RDC_Grand_oral/Releve-de-competences.pdf' }
     ],
     logo: '/images/ispn-logo-jaune.jpg'
   },

@@ -4,12 +4,14 @@ export interface ContentData {
   // Hero Section
   hero: {
     name: string;
+    subtitle: string;
+    description: string;
     roles: string[];
     email: string;
     phone: string;
     location: string;
   };
-  
+
   // About Section
   about: {
     intro: string;
@@ -118,12 +120,13 @@ export interface ContentData {
 const defaultContent: ContentData = {
   hero: {
     name: "SAIBOU ABDOU SALAM",
+    subtitle: "Business Developer Tech | Fondateur Fiablitech | Responsable du Développement Commercial (RDC)",
+    description: "Business Developer spécialisé Tech. J'identifie les besoins, je construis la stratégie commerciale… et mon équipe développe la solution. Embauchez-moi, c'est gagner un Business Developer orienté résultats + une force de production digitale déjà opérationnelle. Diplômé Responsable du Développement Commercial (RDC) – Certification validée 2026. Ouvert aux opportunités au Luxembourg (présentiel / hybride / frontalier).",
     roles: [
-      "Expert en stratégie commerciale",
-      "Spécialiste en immobilier",
-      "Entrepreneur en innovation digitale",
-      "Leader polyvalent",
-      "Consultant en travaux publics"
+      "Business Developer Tech avec équipe de développement intégrée",
+      "J'arrive avec mon équipe : on conçoit et livre n'importe quel outil digital",
+      "Transformation digitale des secteurs traditionnels (Immo • BTP • PME)",
+      "Diplômé Responsable du Développement Commercial (RNCP niveau 6)"
     ],
     email: "salamsaibou2002@gmail.com",
     phone: "+33 06 51 10 43 34",
@@ -137,13 +140,15 @@ const defaultContent: ContentData = {
     callToAction: "Mon parcours m'a ensuite mené vers le BTP et les travaux publics, un secteur riche en défis qui m'a permis d'acquérir une expérience solide sur le terrain, de développer ma capacité d'adaptation et mon sens de la rigueur. Aujourd'hui, je me définis comme un entrepreneur passionné et engagé, à la croisée de l'immobilier, du digital et du BTP, animé par l'envie de bâtir des projets solides et pertinents, où l'humain et l'innovation se rencontrent.",
     sections: {
       whoIAm: [
-        "Je suis un professionnel passionné, à la croisée de l'immobilier, du digital et du BTP.",
-        "Mon parcours m'a permis d'évoluer dans des environnements variés, de la relation client en agence immobilière à la création de FIABLITECH, une entreprise digitale tournée vers l'innovation et la performance."
+        "Je suis Business Developer Tech, fondateur de Fiablitech et diplômé Responsable du Développement Commercial (RDC).",
+        "Mon parcours m'a fait passer de la relation client en immobilier à la création d'une agence digitale.",
+        "Aujourd'hui, j'apporte non seulement de la vision commerciale, mais aussi une équipe technique complète déjà constituée."
       ],
       whatIDo: [
-        "Aujourd'hui, je m'investis pleinement dans le secteur du BTP, un univers riche en défis humains et techniques.",
-        "J'interviens sur des projets où la coordination, la rigueur et l'organisation jouent un rôle central.",
-        "Je me spécialise progressivement dans la gestion des achats, la logistique et le suivi de projets."
+        "J'identifie les besoins des entreprises et je construis la stratégie commerciale.",
+        "Mon équipe développe ensuite la solution digitale (web, mobile, IA, automatisation).",
+        "J'accompagne particulièrement la transformation digitale des secteurs traditionnels (immobilier, BTP, PME).",
+        "Embauchez-moi, c'est gagner un Business Developer + une force de production digitale."
       ],
       myGoals: [
         "Continuer à évoluer dans le BTP et à en maîtriser chaque facette.",
