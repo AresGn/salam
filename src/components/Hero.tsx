@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowDown, Hand } from 'lucide-react';
 import { Link } from './Link';
-import { TextSlider } from './ui/TextSlider';
 import { SocialLinks } from './hero/SocialLinks';
 import { ContactInfo } from './hero/ContactInfo';
 import { ActionButtons } from './hero/ActionButtons';
@@ -9,7 +8,7 @@ import { useContent } from '../contexts/ContentContext';
 
 export function Hero() {
   const { content } = useContent();
-  const { name, subtitle, roles } = content.hero;
+  const { name, subtitle } = content.hero;
 
   return (
     <section
@@ -35,12 +34,9 @@ export function Hero() {
               <h1 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent animate-gradient">
                 {name}
               </h1>
-              <p className="text-base md:text-lg font-semibold text-gray-700 dark:text-gray-200">
+              <p className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-200">
                 {subtitle}
               </p>
-              <div className="text-xl md:text-2xl text-gray-600 dark:text-gray-300">
-                <TextSlider words={roles} delay={3000} />
-              </div>
             </div>
 
             <ContactInfo />

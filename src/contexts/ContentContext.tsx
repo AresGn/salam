@@ -15,14 +15,22 @@ export interface ContentData {
   // About Section
   about: {
     intro: string;
-    description1: string;
-    description2: string;
-    callToAction: string;
-    sections: {
-      whoIAm: string[];
-      whatIDo: string[];
-      myGoals: string[];
-      myPhilosophy: string[];
+    pitch: string[];
+    cards: Array<{
+      id: string;
+      title: string;
+      icon: string;
+      color: string;
+      points: string[];
+    }>;
+    description1?: string;
+    description2?: string;
+    callToAction?: string;
+    sections?: {
+      whoIAm?: string[];
+      whatIDo?: string[];
+      myGoals?: string[];
+      myPhilosophy?: string[];
     };
   };
   
@@ -121,12 +129,9 @@ const defaultContent: ContentData = {
   hero: {
     name: "SAIBOU ABDOU SALAM",
     subtitle: "Business Developer Tech | Fondateur Fiablitech | Responsable du Développement Commercial (RDC)",
-    description: "Business Developer spécialisé Tech. J'identifie les besoins, je construis la stratégie commerciale… et mon équipe développe la solution. Embauchez-moi, c'est gagner un Business Developer orienté résultats + une force de production digitale déjà opérationnelle. Diplômé Responsable du Développement Commercial (RDC) – Certification validée 2026. Ouvert aux opportunités au Luxembourg (présentiel / hybride / frontalier).",
+    description: "Business Developer Tech et fondateur de Fiablitech. Diplômé Responsable du Développement Commercial (RDC – validé 2026). J'apporte une vision commerciale orientée résultats, combinée à une équipe technique capable de concevoir et livrer des solutions digitales. Ouvert aux opportunités au Luxembourg (présentiel / hybride / frontalier).",
     roles: [
-      "Business Developer Tech avec équipe de développement intégrée",
-      "J'arrive avec mon équipe : on conçoit et livre n'importe quel outil digital",
-      "Transformation digitale des secteurs traditionnels (Immo • BTP • PME)",
-      "Diplômé Responsable du Développement Commercial (RNCP niveau 6)"
+      "Business Developer Tech | Fondateur Fiablitech | Responsable du Développement Commercial (RDC)"
     ],
     email: "salamsaibou2002@gmail.com",
     phone: "+33 06 51 10 43 34",
@@ -135,31 +140,65 @@ const defaultContent: ContentData = {
   
   about: {
     intro: "À propos",
-    description1: "J'ai commencé ma carrière dans une agence immobilière, un environnement stimulant où j'ai rapidement compris l'importance de la relation client et de l'écoute. J'y ai appris à accompagner des clients exigeants dans la recherche de biens d'exception, à la vente, à la location ou en gestion, tout en développant une réelle passion pour le contact humain et la satisfaction client.",
-    description2: "En parallèle, j'ai fondé FIABLITECH, une entreprise digitale née de ma conviction que la technologie et l'intelligence artificielle sont indispensables à la performance des entreprises modernes. Entouré d'une équipe d'ingénieurs passionnés, j'y ai mis en place des solutions innovantes pour simplifier, fiabiliser et digitaliser les processus métier.",
-    callToAction: "Mon parcours m'a ensuite mené vers le BTP et les travaux publics, un secteur riche en défis qui m'a permis d'acquérir une expérience solide sur le terrain, de développer ma capacité d'adaptation et mon sens de la rigueur. Aujourd'hui, je me définis comme un entrepreneur passionné et engagé, à la croisée de l'immobilier, du digital et du BTP, animé par l'envie de bâtir des projets solides et pertinents, où l'humain et l'innovation se rencontrent.",
+    pitch: [
+      "Business Developer Tech et fondateur de Fiablitech.",
+      "Diplômé Responsable du Développement Commercial (RDC – validé 2026).",
+      "J'apporte une vision commerciale orientée résultats, combinée à une équipe technique capable de concevoir et livrer des solutions digitales.",
+      "Ouvert aux opportunités au Luxembourg (présentiel / hybride / frontalier)."
+    ],
+    cards: [
+      {
+        id: "profil",
+        title: "Mon profil",
+        icon: "user",
+        color: "bg-blue-600",
+        points: [
+          "Je ne suis pas un simple commercial.",
+          "Je suis orienté résultats mesurables, avec une forte culture des indicateurs de performance (KPI).",
+          "Mon objectif : générer du chiffre d'affaires, apporter des clients, signer des contrats et faire croître l'entreprise."
+        ]
+      },
+      {
+        id: "force",
+        title: "Ma force",
+        icon: "users",
+        color: "bg-purple-600",
+        points: [
+          "J'ai un style de management participatif.",
+          "Les défis, le stress et les environnements challengers me stimulent.",
+          "Curieux et motivé, m'avoir dans une entreprise, c'est gagner un profil capable d'apporter rapidement les compétences et les stratégies de croissance nécessaires."
+        ]
+      },
+      {
+        id: "terrain",
+        title: "Mon terrain",
+        icon: "target",
+        color: "bg-emerald-600",
+        points: [
+          "Transformation digitale et développement commercial des secteurs traditionnels (immobilier, BTP, PME).",
+          "Je pilote une équipe technique capable de concevoir et livrer des solutions digitales concrètes."
+        ]
+      }
+    ],
+    description1: "Business Developer Tech et fondateur de Fiablitech.",
+    description2: "Diplômé Responsable du Développement Commercial (RDC – validé 2026).",
+    callToAction: "Ouvert aux opportunités au Luxembourg (présentiel / hybride / frontalier).",
     sections: {
       whoIAm: [
-        "Je suis Business Developer Tech, fondateur de Fiablitech et diplômé Responsable du Développement Commercial (RDC).",
-        "Mon parcours m'a fait passer de la relation client en immobilier à la création d'une agence digitale.",
-        "Aujourd'hui, j'apporte non seulement de la vision commerciale, mais aussi une équipe technique complète déjà constituée."
+        "Je ne suis pas un simple commercial.",
+        "Je suis orienté résultats mesurables, avec une forte culture des indicateurs de performance (KPI).",
+        "Mon objectif : générer du chiffre d'affaires, apporter des clients, signer des contrats et faire croître l'entreprise."
       ],
       whatIDo: [
-        "J'identifie les besoins des entreprises et je construis la stratégie commerciale.",
-        "Mon équipe développe ensuite la solution digitale (web, mobile, IA, automatisation).",
-        "J'accompagne particulièrement la transformation digitale des secteurs traditionnels (immobilier, BTP, PME).",
-        "Embauchez-moi, c'est gagner un Business Developer + une force de production digitale."
+        "J'ai un style de management participatif.",
+        "Les défis, le stress et les environnements challengers me stimulent.",
+        "Curieux et motivé, m'avoir dans une entreprise, c'est gagner un profil capable d'apporter rapidement les compétences et les stratégies de croissance nécessaires."
       ],
       myGoals: [
-        "Continuer à évoluer dans le BTP et à en maîtriser chaque facette.",
-        "Approfondir mes compétences techniques et managériales sur le terrain.",
-        "Vivre des expériences motivantes et formatrices, guidées par ma soif d'apprendre et mon envie de progresser."
+        "Transformation digitale et développement commercial des secteurs traditionnels (immobilier, BTP, PME).",
+        "Je pilote une équipe technique capable de concevoir et livrer des solutions digitales concrètes."
       ],
-      myPhilosophy: [
-        "Le sérieux, la curiosité et la passion guident chacune de mes décisions.",
-        "Je crois que la réussite se construit sur la volonté d'apprendre, la collaboration et la recherche de qualité.",
-        "Mon but : avancer avec détermination et bâtir des projets solides, utiles et porteurs de sens."
-      ]
+      myPhilosophy: []
     }
   },
   
@@ -265,18 +304,30 @@ const defaultContent: ContentData = {
     title: "Expérience Professionnelle",
     experiences: [
       {
-        id: "alternance-immobilier",
-        title: "Stage alterné Immobilier",
-        company: "Agence immobilière « Agence de la gare »",
-        period: "2024-2025",
+        id: "fiablitech",
+        title: "Fondateur & Responsable Commercial",
+        company: "Fiablitech",
+        period: "2024 – Aujourd’hui (2 ans)",
         description: [
-          "Accueil et orientation des clients : premier point de contact à l'entrée de l'agence",
-          "Organisation de visites guidées : accompagnement des clients lors des visites de biens",
-          "Estimation de biens immobiliers : participation à l'évaluation de la valeur des propriétés",
-          "Gestion administrative : suivi et mise à jour des dossiers clients",
-          "Communication digitale : gestion des réseaux sociaux de l'agence",
-          "Prospection commerciale : recherche de nouveaux clients et prise de mandats",
-          "Valorisation des biens : mise en valeur des annonces en vitrine"
+          "Création et pilotage commercial de Fiablitech, agence digitale spécialisée dans la conception d’outils numériques sur mesure.",
+          "Gestion complète du cycle commercial : prospection, qualification, négociation, closing et fidélisation des clients.",
+          "Réalisation d’études de marché stratégiques (analyse macro et micro-environnement, SWOT, PESTEL) afin d’identifier les besoins réels des entreprises.",
+          "Conception et commercialisation de solutions digitales innovantes destinées à automatiser les tâches répétitives et optimiser les processus métier.",
+          "Pilotage de l’équipe technique pour le développement des outils proposés aux clients.",
+          "Mise en place de contrats de maintenance et suivi de la relation client après signature."
+        ]
+      },
+      {
+        id: "alternance-btp",
+        title: "Assistant ingénieur BTP",
+        company: "E.S.T.B Ingénierie",
+        period: "2025-2026",
+        description: [
+          "Lecture et analyse de plans techniques",
+          "Participation aux études de faisabilité de projets",
+          "Réalisation de métrés (quantification des matériaux)",
+          "Aide à l'élaboration de devis et estimations de coûts",
+          "Suivi de l'avancement des projets / chantiers"
         ]
       }
     ]
@@ -357,7 +408,23 @@ const ContentContext = createContext<ContentContextType | undefined>(undefined);
 export function ContentProvider({ children }: { children: React.ReactNode }) {
   const [content, setContent] = useState<ContentData>(() => {
     const saved = localStorage.getItem('portfolio-content-v2');
-    return saved ? JSON.parse(saved) : defaultContent;
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        return {
+          ...defaultContent,
+          ...parsed,
+          hero: {
+            ...defaultContent.hero,
+            ...(parsed.hero || {}),
+            subtitle: parsed.hero?.subtitle || defaultContent.hero.subtitle
+          }
+        };
+      } catch {
+        return defaultContent;
+      }
+    }
+    return defaultContent;
   });
 
   useEffect(() => {

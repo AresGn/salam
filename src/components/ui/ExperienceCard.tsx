@@ -37,8 +37,8 @@ export function ExperienceCard({
           {/* Header */}
           <div className="flex items-center gap-4">
             {logo ? (
-              <div className="p-2 bg-white dark:bg-gray-700 rounded-lg">
-                <img src={logo} alt={company} className="h-12 w-auto object-contain" />
+              <div className="p-1.5 bg-white dark:bg-gray-700 rounded-xl border border-gray-200 dark:border-gray-600 shadow-sm flex items-center justify-center h-14 w-14 sm:h-16 sm:w-16 flex-shrink-0 overflow-hidden">
+                <img src={logo} alt={company} className="h-full w-full object-contain rounded-lg" />
               </div>
             ) : (
               <div className="p-3 sm:p-4 bg-blue-100 dark:bg-blue-900 rounded-lg">
@@ -47,19 +47,24 @@ export function ExperienceCard({
             )}
             <div>
               <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">{title}</h3>
-              <p className="text-base text-blue-600 dark:text-blue-400">{company}</p>
+              <p className="text-base font-medium text-blue-600 dark:text-blue-400">{company}</p>
               <p className="text-sm text-gray-500 dark:text-gray-400">{period}</p>
             </div>
           </div>
 
           {/* Description (Custom Blue Bullets) */}
-          <ul className="mt-3 space-y-2 text-gray-700 dark:text-gray-300">
-            {description.split("\n").map((line, index) => (
-              <li key={index} className="flex items-start gap-2">
-                <span className="text-blue-600 dark:text-blue-400 font-bold">•</span> 
-                <span>{line}</span>
-              </li>
-            ))}
+          <ul className="mt-4 space-y-2.5 text-gray-700 dark:text-gray-300">
+            {description.split("\n").map((line, index) => {
+              const trimmed = line.trim();
+              if (!trimmed) return null;
+              const cleanLine = trimmed.replace(/^[•\-\*]\s*/, '');
+              return (
+                <li key={index} className="flex items-start gap-2.5 text-sm sm:text-base leading-relaxed">
+                  <span className="text-blue-600 dark:text-blue-400 font-bold mt-0.5">•</span> 
+                  <span>{cleanLine}</span>
+                </li>
+              );
+            })}
           </ul>
 
           {/* Skills */}

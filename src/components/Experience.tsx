@@ -4,6 +4,19 @@ import { ExperienceCard } from "./ui/ExperienceCard";
 
 const experiences = [
   {
+    title: "Fondateur & Responsable Commercial",
+    company: "Fiablitech",
+    period: "2024 – Aujourd’hui (2 ans)",
+    description: `Création et pilotage commercial de Fiablitech, agence digitale spécialisée dans la conception d’outils numériques sur mesure.
+    Gestion complète du cycle commercial : prospection, qualification, négociation, closing et fidélisation des clients.
+    Réalisation d’études de marché stratégiques (analyse macro et micro-environnement, SWOT, PESTEL) afin d’identifier les besoins réels des entreprises.
+    Conception et commercialisation de solutions digitales innovantes destinées à automatiser les tâches répétitives et optimiser les processus métier.
+    Pilotage de l’équipe technique pour le développement des outils proposés aux clients.
+    Mise en place de contrats de maintenance et suivi de la relation client après signature.`,
+    skills: ["Développement commercial", "Création d'entreprise", "Prospection & Closing", "Études SWOT & PESTEL", "Management d'équipe tech", "Solutions digitales"],
+    logo: "/images/fiablitech-logo.jpeg",
+  },
+  {
     title: "Assistant ingénieur BTP",
     company: "E.S.T.B Ingénierie",
     period: "2025-2026",

@@ -186,6 +186,16 @@ export function AdminPanel() {
                 </div>
 
                 <div>
+                  <label className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Titre / Sous-titre professionnel</label>
+                  <input
+                    type="text"
+                    value={editingData.subtitle || ''}
+                    onChange={(e) => handleInputChange('subtitle', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                  />
+                </div>
+
+                <div>
                   <label className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Rôles (un par ligne)</label>
                   <textarea
                     value={editingData.roles?.join('\n') || ''}
@@ -240,31 +250,11 @@ export function AdminPanel() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Description 1</label>
+                  <label className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Texte d'introduction encadré (une phrase par ligne)</label>
                   <textarea
-                    value={editingData.description1 || ''}
-                    onChange={(e) => handleInputChange('description1', e.target.value)}
-                    rows={3}
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Description 2</label>
-                  <textarea
-                    value={editingData.description2 || ''}
-                    onChange={(e) => handleInputChange('description2', e.target.value)}
-                    rows={3}
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Call to Action</label>
-                  <input
-                    type="text"
-                    value={editingData.callToAction || ''}
-                    onChange={(e) => handleInputChange('callToAction', e.target.value)}
+                    value={editingData.pitch?.join('\n') || ''}
+                    onChange={(e) => handleInputChange('pitch', e.target.value.split('\n').filter(Boolean))}
+                    rows={4}
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                   />
                 </div>
