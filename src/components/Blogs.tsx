@@ -22,12 +22,12 @@ export function Blogs() {
                 📝 Blog en préparation
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                Je prépare actuellement du contenu sur l'entrepreneuriat, la supply chain,
+                Je prépare actuellement du contenu sur l'entrepreneuriat, le business development,
                 et le développement web. Restez connectés pour découvrir mes articles !
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
                 <span className="px-3 py-1 bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-200 rounded-full text-sm">
-                  Supply Chain
+                  Business Development
                 </span>
                 <span className="px-3 py-1 bg-purple-100 dark:bg-purple-800 text-purple-800 dark:text-purple-200 rounded-full text-sm">
                   Entrepreneuriat

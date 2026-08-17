@@ -204,8 +204,8 @@ const defaultContent: ContentData = {
   
   contact: {
     title: "Contactez-moi",
-    subtitle: "Restons en contact",
-    description: "Je suis toujours ouvert aux discussions sur de nouveaux projets, des idées créatives, ou des opportunités d'alternance en Supply Chain.",
+    subtitle: "Discutons de vos projets",
+    description: "Je suis à votre disposition pour échanger sur vos opportunités de collaboration, vos projets de développement commercial ou vos besoins en transformation digitale.",
     email: "salamsaibou2002@gmail.com",
     phone: "+33 06 51 10 43 34",
     linkedin: "linkedin.com/in/saibou-abdou-salam",
@@ -318,7 +318,7 @@ const defaultContent: ContentData = {
         ]
       },
       {
-        id: "alternance-btp",
+        id: "estb-btp",
         title: "Assistant ingénieur BTP",
         company: "E.S.T.B Ingénierie",
         period: "2025-2026",
@@ -388,12 +388,12 @@ const defaultContent: ContentData = {
   
   footer: {
     name: "SAIBOU ABDOU SALAM",
-    description: "Étudiant en Bachelor Supply Chain et Fondateur de Fiablitech. Passionné par l'entrepreneuriat et la transformation digitale.",
+    description: "Business Developer Tech et Fondateur de Fiablitech. Diplômé Responsable du Développement Commercial (RDC). Passionné par l'entrepreneuriat et les solutions digitales innovantes.",
     email: "salamsaibou2002@gmail.com",
     phone: "+33 06 51 10 43 34",
     location: "France, Benin, Chine, Maroc",
     copyright: "Tous droits réservés.",
-    madeWith: "pour ma recherche d'alternance"
+    madeWith: "par Fiablitech"
   }
 };
 
@@ -418,6 +418,22 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
             ...defaultContent.hero,
             ...(parsed.hero || {}),
             subtitle: parsed.hero?.subtitle || defaultContent.hero.subtitle
+          },
+          contact: {
+            ...defaultContent.contact,
+            ...(parsed.contact || {}),
+            description: (parsed.contact?.description && !parsed.contact.description.includes('alternance') && !parsed.contact.description.includes('Supply Chain'))
+              ? parsed.contact.description
+              : defaultContent.contact.description,
+            subtitle: parsed.contact?.subtitle || defaultContent.contact.subtitle,
+          },
+          footer: {
+            ...defaultContent.footer,
+            ...(parsed.footer || {}),
+            description: (parsed.footer?.description && !parsed.footer.description.includes('Supply Chain'))
+              ? parsed.footer.description
+              : defaultContent.footer.description,
+            madeWith: defaultContent.footer.madeWith
           }
         };
       } catch {

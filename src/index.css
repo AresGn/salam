@@ -84,12 +84,16 @@
   @apply motion-safe:animate-[floating_4s_ease-in-out_infinite];
 }
 
-/* Optimize mobile performance */
-html, body {
+/* Ensure smooth fluid scrolling across mobile and desktop */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
   overflow-x: hidden;
   width: 100%;
-  overscroll-behavior-y: none;
-  -webkit-overflow-scrolling: touch;
+  min-height: 100vh;
 }
 
 /* Optimize images and transitions */
