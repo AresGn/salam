@@ -38,6 +38,7 @@ export function Navbar() {
     { href: '#about', label: 'À propos' },
     { href: '#skills', label: 'Compétences' },
     { href: '#projects', label: 'Projets' },
+    { href: '#team', label: 'Équipe' },
     { href: '#experience', label: 'Parcours' },
     { href: '#contact', label: 'Contact' },
   ];
