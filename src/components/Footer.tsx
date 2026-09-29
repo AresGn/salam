@@ -13,7 +13,7 @@ function FooterLink({ href, children }: FooterLinkProps) {
   return (
     <Link
       href={href}
-      className="block text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm hover:translate-x-1 transform py-1"
+      className="block !text-gray-300 hover:!text-blue-400 transition-colors duration-200 text-sm hover:translate-x-1 transform py-1"
     >
       {children}
     </Link>

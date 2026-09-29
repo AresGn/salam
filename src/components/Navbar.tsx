@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { Link } from './Link';
+import { useTheme } from '../hooks/useTheme';
+import { ThemeToggle } from './ui/ThemeToggle';
 import { useAnimatedLogo } from '../hooks/useAnimatedLogo';
 import { LoadingScreen } from './loading/LoadingScreen';
 import { motion } from 'framer-motion';
@@ -9,6 +11,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const { isDark, setIsDark } = useTheme();
   const { isLogoAnimating, handleLogoClick } = useAnimatedLogo();
 
   useEffect(() => {
@@ -32,6 +35,10 @@ export function Navbar() {
     sections.forEach((section) => observer.observe(section));
     return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
+
+  const toggleTheme = () => {
+    setIsDark(!isDark);
+  };
 
   const navLinks = [
     { href: '#home', label: 'Accueil' },
@@ -77,6 +84,7 @@ export function Navbar() {
               </Link>
             ))}
 
+            <ThemeToggle isDark={isDark} onToggle={toggleTheme} />
             <a
               href="https://www.fiablitech-projet.com/"
               target="_blank"
@@ -99,6 +107,7 @@ export function Navbar() {
 
           {/* Mobile menu button */}
           <div className="flex lg:hidden items-center space-x-2">
+            <ThemeToggle isDark={isDark} onToggle={toggleTheme} />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700"
