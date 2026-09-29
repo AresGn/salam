@@ -328,8 +328,8 @@ export function Recruitment() {
         {/* Candidature */}
         <section id="candidature" className="scroll-mt-20 py-16 sm:py-24 bg-gray-50 dark:bg-gray-900/60">
           <div className="container mx-auto px-4 sm:px-6">
-            <SectionHeading icon={Send} eyebrow="Candidature" title="Postulez en 3 minutes">
-              Remplissez le formulaire ci-dessous. Nous revenons vers chaque candidat rapidement.
+            <SectionHeading icon={Send} eyebrow="Candidature" title="Postulez en 3 étapes">
+              Trois minutes suffisent. Nous revenons vers chaque candidat rapidement.
             </SectionHeading>
             <motion.div
               {...fadeUp}
