@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { User, Mail, Send } from 'lucide-react';
 import { FaRegCommentDots } from 'react-icons/fa';
-import { sendForm } from '../../lib/formsubmit';
+import { sendForm } from '../../lib/sendForm';
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -26,8 +26,8 @@ export function ContactForm() {
     setErrorMessage('');
 
     const result = await sendForm({
-      _subject: `Nouveau message du portfolio — ${formData.name.trim()}`,
-      _replyto: formData.email.trim(),
+      subject: `Nouveau message du portfolio — ${formData.name.trim()}`,
+      replyto: formData.email.trim(),
       Formulaire: 'Contact',
       Nom: formData.name.trim(),
       email: formData.email.trim(),

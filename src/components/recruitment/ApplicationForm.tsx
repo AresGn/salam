@@ -17,7 +17,7 @@ import {
   Check,
   MessageSquareText,
 } from 'lucide-react';
-import { sendForm } from '../../lib/formsubmit';
+import { sendForm } from '../../lib/sendForm';
 
 
 const STUDY_LEVELS = ['Bac', 'Bac +1', 'Bac +2', 'Bac +3', 'Bac +4', 'Bac +5 et +'];
@@ -35,7 +35,7 @@ interface FormData {
   profileUrl: string;
   motivation: string;
   consent: boolean;
-  _honey: string;
+  botcheck: string;
 }
 
 type Errors = Partial<Record<keyof FormData, string>>;
@@ -53,7 +53,7 @@ const initialData: FormData = {
   profileUrl: '',
   motivation: '',
   consent: false,
-  _honey: '',
+  botcheck: '',
 };
 
 const MIN_MOTIVATION_LENGTH = 50;
@@ -276,13 +276,18 @@ export function ApplicationForm() {
       return;
     }
 
+    // Honeypot filled in: a bot. Pretend it worked without sending anything.
+    if (data.botcheck) {
+      setStatus('success');
+      return;
+    }
+
     setStatus('submitting');
     setServerError('');
 
     const result = await sendForm({
-      _subject: `Candidature étudiant — ${data.firstName.trim()} ${data.lastName.trim()}`,
-      _replyto: data.email.trim(),
-      _honey: data._honey,
+      subject: `Candidature étudiant — ${data.firstName.trim()} ${data.lastName.trim()}`,
+      replyto: data.email.trim(),
       Formulaire: 'Recrutement étudiants',
       Prénom: data.firstName.trim(),
       Nom: data.lastName.trim(),
@@ -337,11 +342,11 @@ export function ApplicationForm() {
       <Stepper current={step} />
 
       <form onSubmit={handleSubmit} noValidate>
-        {/* Honeypot anti-spam (FormSubmit) */}
+        {/* Honeypot anti-spam (Web3Forms) */}
         <input
           type="text"
-          name="_honey"
-          value={data._honey}
+          name="botcheck"
+          value={data.botcheck}
           onChange={handleChange}
           tabIndex={-1}
           autoComplete="off"
