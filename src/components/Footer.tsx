@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import { Link } from './Link';
 import { SocialLinks } from './hero/SocialLinks';
 import { Mail, Phone, MapPin, Heart } from 'lucide-react';
@@ -81,6 +82,13 @@ export function Footer() {
                   <FooterLink href={href}>{label}</FooterLink>
                 </div>
               ))}
+              <RouterLink
+                to="/recrutement"
+                className="inline-flex items-center gap-2 text-sm text-purple-300 hover:text-purple-200 transition-colors py-1"
+              >
+                Nous recrutons
+                <span className="px-2 py-0.5 rounded-full bg-purple-500/20 text-[10px] font-semibold uppercase tracking-wider">Étudiants</span>
+              </RouterLink>
             </nav>
           </div>
 

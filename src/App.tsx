@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ContentProvider } from './contexts/ContentContext';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -15,6 +15,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { LoadingScreen } from './components/loading/LoadingScreen';
 import { AdminPanel } from './components/admin/AdminPanel';
+import { Recruitment } from './pages/Recruitment';
 import { useLoading } from './hooks/useLoading';
 import { CustomCursor } from "./components/ui/CustomCursor";
 import { ScrollToTop } from "./components/ui/ScrollToTop";
@@ -53,6 +54,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MainPortfolio />} />
+          <Route path="/recrutement" element={<Recruitment />} />
+          <Route path="/hiring" element={<Navigate to="/recrutement" replace />} />
           <Route path="/salam-admin" element={<AdminPanel />} />
         </Routes>
       </Router>
