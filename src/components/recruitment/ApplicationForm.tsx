@@ -17,8 +17,8 @@ import {
   Check,
   MessageSquareText,
 } from 'lucide-react';
+import { sendForm } from '../../lib/formsubmit';
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mvggvyar';
 
 const STUDY_LEVELS = ['Bac', 'Bac +1', 'Bac +2', 'Bac +3', 'Bac +4', 'Bac +5 et +'];
 
@@ -35,7 +35,7 @@ interface FormData {
   profileUrl: string;
   motivation: string;
   consent: boolean;
-  _gotcha: string;
+  _honey: string;
 }
 
 type Errors = Partial<Record<keyof FormData, string>>;
@@ -53,7 +53,7 @@ const initialData: FormData = {
   profileUrl: '',
   motivation: '',
   consent: false,
-  _gotcha: '',
+  _honey: '',
 };
 
 const MIN_MOTIVATION_LENGTH = 50;
@@ -279,44 +279,31 @@ export function ApplicationForm() {
     setStatus('submitting');
     setServerError('');
 
-    try {
-      const response = await fetch(FORMSPREE_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({
-          _subject: `Candidature étudiant — ${data.firstName.trim()} ${data.lastName.trim()}`,
-          _replyto: data.email.trim(),
-          _gotcha: data._gotcha,
-          formulaire: 'Recrutement étudiants',
-          prenom: data.firstName.trim(),
-          nom: data.lastName.trim(),
-          email: data.email.trim(),
-          telephone: data.phone.trim(),
-          ville: data.city.trim() || 'Non renseignée',
-          ecole: data.school.trim(),
-          niveau_etudes: data.studyLevel,
-          disponibilite: data.availability || 'Non renseignée',
-          experience_commerciale: data.experience,
-          cv_ou_linkedin: data.profileUrl.trim() || 'Non renseigné',
-          motivation: data.motivation.trim(),
-        }),
-      });
+    const result = await sendForm({
+      _subject: `Candidature étudiant — ${data.firstName.trim()} ${data.lastName.trim()}`,
+      _replyto: data.email.trim(),
+      _honey: data._honey,
+      Formulaire: 'Recrutement étudiants',
+      Prénom: data.firstName.trim(),
+      Nom: data.lastName.trim(),
+      email: data.email.trim(),
+      Téléphone: data.phone.trim(),
+      Ville: data.city.trim() || 'Non renseignée',
+      École: data.school.trim(),
+      "Niveau d'études": data.studyLevel,
+      Disponibilité: data.availability || 'Non renseignée',
+      'Expérience commerciale': data.experience,
+      'CV / LinkedIn': data.profileUrl.trim() || 'Non renseigné',
+      Motivation: data.motivation.trim(),
+    });
 
-      if (response.ok) {
-        setStatus('success');
-        setData(initialData);
-        setStep(0);
-        scrollToTop();
-      } else {
-        const body = await response.json().catch(() => null);
-        setServerError(
-          body?.errors?.map((err: { message: string }) => err.message).join(' ') ||
-            "L'envoi a échoué. Merci de réessayer dans quelques instants."
-        );
-        setStatus('error');
-      }
-    } catch {
-      setServerError('Impossible de joindre le serveur. Vérifiez votre connexion puis réessayez.');
+    if (result.ok) {
+      setStatus('success');
+      setData(initialData);
+      setStep(0);
+      scrollToTop();
+    } else {
+      setServerError(result.message);
       setStatus('error');
     }
   };
@@ -350,11 +337,11 @@ export function ApplicationForm() {
       <Stepper current={step} />
 
       <form onSubmit={handleSubmit} noValidate>
-        {/* Honeypot anti-spam (Formspree) */}
+        {/* Honeypot anti-spam (FormSubmit) */}
         <input
           type="text"
-          name="_gotcha"
-          value={data._gotcha}
+          name="_honey"
+          value={data._honey}
           onChange={handleChange}
           tabIndex={-1}
           autoComplete="off"

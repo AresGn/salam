@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { User, Mail, Send } from 'lucide-react';
 import { FaRegCommentDots } from 'react-icons/fa';
+import { sendForm } from '../../lib/formsubmit';
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -24,23 +25,20 @@ export function ContactForm() {
     setStatus('submitting');
     setErrorMessage('');
 
-    try {
-      const response = await fetch('https://formspree.io/f/mvggvyar', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
+    const result = await sendForm({
+      _subject: `Nouveau message du portfolio — ${formData.name.trim()}`,
+      _replyto: formData.email.trim(),
+      Formulaire: 'Contact',
+      Nom: formData.name.trim(),
+      email: formData.email.trim(),
+      Message: formData.message.trim(),
+    });
 
-      if (response.ok) {
-        setStatus('success');
-        setFormData({ name: '', email: '', message: '' }); // Reset the form
-      } else {
-        const errorData = await response.json();
-        setErrorMessage(errorData.error || 'Something went wrong. Please try again.');
-        setStatus('error');
-      }
-    } catch {
-      setErrorMessage('An unexpected error occurred. Please try again.');
+    if (result.ok) {
+      setStatus('success');
+      setFormData({ name: '', email: '', message: '' }); // Reset the form
+    } else {
+      setErrorMessage(result.message);
       setStatus('error');
     }
   };
