@@ -7,11 +7,13 @@ export type SubmitResult = { ok: true } | { ok: false; message: string };
 
 export async function sendForm(fields: Record<string, string>): Promise<SubmitResult> {
   try {
-    const response = await fetch(WEB3FORMS_ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify({ access_key: WEB3FORMS_ACCESS_KEY, from_name: 'Portfolio SAIBOU ABDOU SALAM', ...fields }),
-    });
+    // FormData (no custom headers) keeps this a "simple" CORS request, as in the Web3Forms docs.
+    const formData = new FormData();
+    formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+    formData.append('from_name', 'Portfolio SAIBOU ABDOU SALAM');
+    Object.entries(fields).forEach(([key, value]) => formData.append(key, value));
+
+    const response = await fetch(WEB3FORMS_ENDPOINT, { method: 'POST', body: formData });
     const body = await response.json().catch(() => null);
 
     if (response.ok && body?.success === true) {
