@@ -13,11 +13,13 @@ import {
   Percent,
   TrendingUp,
   ArrowRight,
-  ArrowLeft,
   CheckCircle2,
   Briefcase,
   GraduationCap,
   Sparkles,
+  Target,
+  UserCheck,
+  Send,
   ShieldCheck,
   Zap,
   ListChecks,
@@ -25,8 +27,10 @@ import {
   Mountain,
   Repeat,
 } from 'lucide-react';
-import { useTheme } from '../hooks/useTheme';
-import { ThemeToggle } from '../components/ui/ThemeToggle';
+import { Navbar } from '../components/Navbar';
+import { Footer } from '../components/Footer';
+import { ScrollToTop } from '../components/ui/ScrollToTop';
+import { CustomCursor } from '../components/ui/CustomCursor';
 import { ApplicationForm } from '../components/recruitment/ApplicationForm';
 
 const PAGE_TITLE = 'Recrutement étudiants | SAIBOU ABDOU SALAM';
@@ -69,10 +73,21 @@ const fadeUp = {
   transition: { duration: 0.5, ease: 'easeOut' },
 } as const;
 
-function SectionHeading({ eyebrow, title, children }: { eyebrow: string; title: string; children?: React.ReactNode }) {
+function SectionHeading({
+  icon: Icon,
+  eyebrow,
+  title,
+  children,
+}: {
+  icon: React.ElementType;
+  eyebrow: string;
+  title: string;
+  children?: React.ReactNode;
+}) {
   return (
     <motion.div {...fadeUp} className="max-w-2xl mx-auto text-center mb-10 sm:mb-14">
-      <span className="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400 mb-3">
+      <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400 mb-3">
+        <Icon className="w-4 h-4" />
         {eyebrow}
       </span>
       <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">{title}</h2>
@@ -82,8 +97,6 @@ function SectionHeading({ eyebrow, title, children }: { eyebrow: string; title: 
 }
 
 export function Recruitment() {
-  const { isDark, setIsDark } = useTheme();
-
   useEffect(() => {
     const previousTitle = document.title;
     document.title = PAGE_TITLE;
@@ -95,32 +108,8 @@ export function Recruitment() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-white overflow-x-hidden">
-      {/* Header */}
-      <header className="sticky top-0 z-40 backdrop-blur-md bg-white/80 dark:bg-gray-950/80 border-b border-gray-200/70 dark:border-gray-800/70">
-        <div className="container mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
-          <RouterLink
-            to="/"
-            className="flex items-center gap-2 min-w-0 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4 shrink-0" />
-            <span className="font-bold tracking-tight truncate">
-              <span className="hidden sm:inline">SAIBOU ABDOU SALAM</span>
-              <span className="sm:hidden">Portfolio</span>
-            </span>
-          </RouterLink>
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-            <ThemeToggle isDark={isDark} onToggle={() => setIsDark(!isDark)} />
-            <a
-              href="#candidature"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-semibold hover:from-blue-700 hover:to-purple-700 transition-all"
-            >
-              Postuler
-              <ArrowRight className="w-4 h-4" />
-            </a>
-          </div>
-        </div>
-      </header>
-
+      <CustomCursor />
+      <Navbar />
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden">
@@ -128,7 +117,7 @@ export function Recruitment() {
           <div className="absolute -top-32 -right-32 -z-10 w-96 h-96 rounded-full bg-purple-400/20 dark:bg-purple-600/20 blur-3xl" />
           <div className="absolute top-40 -left-32 -z-10 w-96 h-96 rounded-full bg-blue-400/20 dark:bg-blue-600/20 blur-3xl" />
 
-          <div className="container mx-auto px-4 sm:px-6 pt-14 pb-16 sm:pt-24 sm:pb-24 text-center">
+          <div className="container mx-auto px-4 sm:px-6 pt-28 pb-16 sm:pt-36 sm:pb-24 text-center">
             <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 text-sm font-semibold mb-6">
                 <span className="relative flex h-2 w-2">
@@ -207,7 +196,7 @@ export function Recruitment() {
         {/* Mission */}
         <section className="py-16 sm:py-24 bg-gray-50 dark:bg-gray-900/60">
           <div className="container mx-auto px-4 sm:px-6">
-            <SectionHeading eyebrow="🎯 Votre mission" title="Ce que vous ferez au quotidien" />
+            <SectionHeading icon={Target} eyebrow="Votre mission" title="Ce que vous ferez au quotidien" />
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
               {missions.map(({ icon: Icon, title, text }, i) => (
                 <motion.div
@@ -230,7 +219,7 @@ export function Recruitment() {
         {/* Conditions */}
         <section className="py-16 sm:py-24">
           <div className="container mx-auto px-4 sm:px-6">
-            <SectionHeading eyebrow="⏱️ Conditions" title="Un cadre pensé pour les étudiants" />
+            <SectionHeading icon={Clock} eyebrow="Conditions" title="Un cadre pensé pour les étudiants" />
             <div className="grid lg:grid-cols-5 gap-4 sm:gap-6 max-w-6xl mx-auto">
               <motion.div {...fadeUp} className="lg:col-span-2 flex flex-col gap-4 sm:gap-6">
                 <div className="flex-1 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 text-white shadow-lg">
@@ -285,7 +274,7 @@ export function Recruitment() {
         {/* Évolution */}
         <section className="py-16 sm:py-24 bg-gray-50 dark:bg-gray-900/60">
           <div className="container mx-auto px-4 sm:px-6">
-            <SectionHeading eyebrow="🚀 Possibilités d’évolution" title="Et après ?">
+            <SectionHeading icon={TrendingUp} eyebrow="Possibilités d’évolution" title="Et après ?">
               À l’issue de la période d'évaluation, selon le profil et les possibilités :
             </SectionHeading>
             <motion.div
@@ -315,7 +304,7 @@ export function Recruitment() {
         {/* Profil */}
         <section className="py-16 sm:py-24">
           <div className="container mx-auto px-4 sm:px-6">
-            <SectionHeading eyebrow="👤 Profil recherché" title="Nous recherchons avant tout des étudiants" />
+            <SectionHeading icon={UserCheck} eyebrow="Profil recherché" title="Nous recherchons avant tout des étudiants" />
             <motion.ul {...fadeUp} className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
               {qualities.map(({ icon: Icon, label }) => (
                 <li
@@ -337,9 +326,9 @@ export function Recruitment() {
         </section>
 
         {/* Candidature */}
-        <section id="candidature" className="scroll-mt-16 py-16 sm:py-24 bg-gray-50 dark:bg-gray-900/60">
+        <section id="candidature" className="scroll-mt-20 py-16 sm:py-24 bg-gray-50 dark:bg-gray-900/60">
           <div className="container mx-auto px-4 sm:px-6">
-            <SectionHeading eyebrow="✉️ Candidature" title="Postulez en 3 minutes">
+            <SectionHeading icon={Send} eyebrow="Candidature" title="Postulez en 3 minutes">
               Remplissez le formulaire ci-dessous. Nous revenons vers chaque candidat rapidement.
             </SectionHeading>
             <motion.div
@@ -352,15 +341,8 @@ export function Recruitment() {
         </section>
       </main>
 
-      <footer className="border-t border-gray-200 dark:border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500 dark:text-gray-400">
-          <p>© {new Date().getFullYear()} SAIBOU ABDOU SALAM</p>
-          <RouterLink to="/" className="inline-flex items-center gap-1.5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-            <ArrowLeft className="w-4 h-4" />
-            Retour au portfolio
-          </RouterLink>
-        </div>
-      </footer>
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }

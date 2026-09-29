@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { ContentProvider } from './contexts/ContentContext';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -23,6 +23,14 @@ import { Analytics } from '@vercel/analytics/react';
 
 function MainPortfolio() {
   const isLoading = useLoading();
+  const { hash } = useLocation();
+
+  // Arriving from another page with a section anchor (e.g. /#team): scroll once content is shown.
+  useEffect(() => {
+    if (!isLoading && hash) {
+      document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [isLoading, hash]);
 
   return (
     <>

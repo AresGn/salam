@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { User, Mail, Phone, MapPin, GraduationCap, Calendar, Link2, Send, CheckCircle2, AlertCircle, Loader2, ChevronDown } from 'lucide-react';
+import { User, Mail, Phone, MapPin, GraduationCap, Calendar, Link2, Send, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mvggvyar';
 
-const STUDY_LEVELS = ['Bac', 'Bac +1', 'Bac +2', 'Bac +3', 'Bac +4', 'Bac +5 et plus'];
+const STUDY_LEVELS = ['Bac', 'Bac +1', 'Bac +2', 'Bac +3', 'Bac +4', 'Bac +5 et +'];
 
 interface FormData {
   firstName: string;
@@ -69,6 +69,24 @@ function inputClass(hasError: boolean, withIcon = true, paddingRight = 'pr-4') {
   return `${inputBase} ${paddingRight} ${withIcon ? 'pl-11' : 'pl-4'} ${
     hasError ? 'border-red-400 dark:border-red-500' : 'border-gray-200 dark:border-gray-700'
   }`;
+}
+
+function choiceClass(selected: boolean, hasError: boolean) {
+  const state = selected
+    ? 'border-blue-500 bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 ring-1 ring-blue-500'
+    : hasError
+    ? 'border-red-400 dark:border-red-500 text-gray-700 dark:text-gray-300'
+    : 'border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-blue-300 dark:hover:border-blue-700';
+  return `flex items-center justify-center text-center px-2 py-3 rounded-xl border cursor-pointer text-sm font-medium transition-colors has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-blue-500 ${state}`;
+}
+
+function FieldError({ message }: { message: string }) {
+  return (
+    <p className="mt-1.5 text-sm text-red-500 flex items-center gap-1">
+      <AlertCircle className="w-4 h-4 shrink-0" />
+      {message}
+    </p>
+  );
 }
 
 interface FieldProps {
@@ -248,25 +266,12 @@ export function ApplicationForm() {
               aria-describedby={describedBy('phone')} className={inputClass(!!errors.phone)} />
           </IconInput>
         </Field>
-        <Field id="school" label="École / formation" required error={errors.school}>
+        <Field id="school" label="École / formation" required error={errors.school} className="sm:col-span-2">
           <IconInput icon={GraduationCap}>
             <input id="school" name="school" type="text" value={data.school} onChange={handleChange}
               placeholder="Ex. : BTS NDRC, IUT TC…" aria-invalid={!!errors.school}
               aria-describedby={describedBy('school')} className={inputClass(!!errors.school)} />
           </IconInput>
-        </Field>
-        <Field id="studyLevel" label="Niveau d'études" required error={errors.studyLevel}>
-          <div className="relative">
-            <select id="studyLevel" name="studyLevel" required value={data.studyLevel} onChange={handleChange}
-              aria-invalid={!!errors.studyLevel} aria-describedby={describedBy('studyLevel')}
-              className={`${inputClass(!!errors.studyLevel, false, 'pr-10')} appearance-none invalid:text-gray-400 dark:invalid:text-gray-500`}>
-              <option value="" disabled>Sélectionnez</option>
-              {STUDY_LEVELS.map((level) => (
-                <option key={level} value={level} className="text-gray-900 dark:text-white">{level}</option>
-              ))}
-            </select>
-            <ChevronDown className="absolute right-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
-          </div>
         </Field>
         <Field id="city" label="Ville" hint="Facultatif">
           <IconInput icon={MapPin}>
@@ -284,20 +289,34 @@ export function ApplicationForm() {
 
       <fieldset>
         <legend className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-2">
+          Niveau d'études<span className="text-red-500 ml-0.5">*</span>
+        </legend>
+        <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
+          {STUDY_LEVELS.map((level, i) => (
+            <label key={level} className={choiceClass(data.studyLevel === level, !!errors.studyLevel)}>
+              <input
+                type="radio"
+                id={i === 0 ? 'studyLevel' : undefined}
+                name="studyLevel"
+                value={level}
+                checked={data.studyLevel === level}
+                onChange={handleChange}
+                className="sr-only"
+              />
+              {level}
+            </label>
+          ))}
+        </div>
+        {errors.studyLevel && <FieldError message={errors.studyLevel} />}
+      </fieldset>
+
+      <fieldset>
+        <legend className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-2">
           Avez-vous déjà une expérience commerciale ?<span className="text-red-500 ml-0.5">*</span>
         </legend>
-        <div className="grid grid-cols-2 gap-3" role="radiogroup">
+        <div className="grid grid-cols-2 gap-3">
           {['Oui', 'Non'].map((option) => (
-            <label
-              key={option}
-              className={`flex items-center justify-center gap-2 py-3 rounded-xl border cursor-pointer text-sm font-medium transition-colors ${
-                data.experience === option
-                  ? 'border-blue-500 bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300'
-                  : errors.experience
-                  ? 'border-red-400 dark:border-red-500 text-gray-700 dark:text-gray-300'
-                  : 'border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-blue-300 dark:hover:border-blue-700'
-              }`}
-            >
+            <label key={option} className={choiceClass(data.experience === option, !!errors.experience)}>
               <input
                 type="radio"
                 id={option === 'Oui' ? 'experience' : undefined}
@@ -311,12 +330,7 @@ export function ApplicationForm() {
             </label>
           ))}
         </div>
-        {errors.experience && (
-          <p className="mt-1.5 text-sm text-red-500 flex items-center gap-1">
-            <AlertCircle className="w-4 h-4 shrink-0" />
-            {errors.experience}
-          </p>
-        )}
+        {errors.experience && <FieldError message={errors.experience} />}
       </fieldset>
 
       <Field id="profileUrl" label="Lien vers votre CV ou profil LinkedIn" error={errors.profileUrl}
