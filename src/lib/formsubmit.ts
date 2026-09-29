@@ -1,7 +1,7 @@
 // Form submissions are delivered by email through FormSubmit (https://formsubmit.co).
 // The first submission sends an activation email to this address; forms work once it is confirmed.
 // After activation, FormSubmit provides a random alias that can replace the address below to hide it.
-const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/salamsaibou05@gmail.com';
+const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/aresgnimagnon0@gmail.com';
 
 export type SubmitResult = { ok: true } | { ok: false; message: string };
 
